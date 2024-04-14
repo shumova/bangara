@@ -16,7 +16,7 @@ $color-base-accent: #ff7f5c;
 $color-base-alert: #ff0000; /* Цвет ошибки */
 // $color-base-warning: #f38b00; /* Цвет предупреждения */
 // $color-base-caution: #f2c94c; /* Цвет осторожности */
-// $color-base-normal: #255222; /* Цвет нейтральный */
+$color-base-normal: #308fff; /* Цвет нейтральный */
 // $color-base-critical: #33000f;
 // $color-transparent: transparent;
 
@@ -73,13 +73,6 @@ $color-base-alert: #ff0000; /* Цвет ошибки */
 //   --color-control-typo-default-hover: #{color.change($color-base-base, $alpha: 0.75)};
 //   --color-control-typo-default-active: #{color.change($color-base-base, $alpha: 0.75)};
 
-  --color-control-typo-secondary: #{$color-base-essential};
-  --color-control-typo-secondary-hover: #{$color-base-essential};
-  --color-control-typo-secondary-hover: #{$color-base-essential};
-
-  --color-control-decoration-secondary: underline 2px solid transparent;
-  --color-control-decoration-secondary-hover: underline 2px solid #ceb6f8;
-  --color-control-decoration-secondary-active: underline 2px solid #ceb6f8;
 
 //   --color-control-bg-default: #{$color-base-essential};
 //   --color-control-bg-default-hover: #{color.change($color-base-base, $alpha: 0.3)};
@@ -102,13 +95,17 @@ $color-base-alert: #ff0000; /* Цвет ошибки */
   --color-control-bg-primary-active: #{color.adjust($color-base-path, $lightness: +9%)};
 
   // Secondary
-  --color-control-typo-secondary: #fcfcfc;
-  --color-control-typo-secondary-hover: #fcfcfc;
-  --color-control-typo-secondary-active: #fcfcfc;
+  --color-control-typo-secondary: #{$color-base-essential};
+  --color-control-typo-secondary-hover: #{$color-base-essential};
+  --color-control-typo-secondary-hover: #{$color-base-essential};
 
   --color-control-bg-secondary: #4642ec;
   --color-control-bg-secondary-hover: #{color.adjust(#4642ec, $lightness: +9%)};
   --color-control-bg-secondary-active: #{color.adjust(#4642ec, $lightness: +9%)};
+
+  --color-control-decoration-secondary: underline 2px solid transparent;
+  --color-control-decoration-secondary-hover: underline 2px solid #ceb6f8;
+  --color-control-decoration-secondary-active: underline 2px solid #ceb6f8;
 
   // Accent
   --color-control-typo-accent: #{$color-base-essential};
@@ -118,6 +115,11 @@ $color-base-alert: #ff0000; /* Цвет ошибки */
   --color-control-bg-accent: #{$color-base-accent};
   --color-control-bg-accent-hover: #{color.adjust($color-base-accent, $lightness: +9%)};
   --color-control-bg-accent-active: #{color.adjust($color-base-accent, $lightness: +9%)};
+
+  // Normal
+  --color-control-typo-normal: #{$color-base-normal};
+  --color-control-typo-normal-hover: #{$color-base-normal};
+  --color-control-typo-normal-active: #{$color-base-normal};
 
 
 //   // Secondary

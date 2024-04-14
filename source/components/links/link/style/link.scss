@@ -1,6 +1,6 @@
 .link {
   --color: inherit;
-  --link-icon-indent: 0.2em;
+  --link-icon-indent: 10px;
   --text-decoration: none;
 
   // Hover
@@ -98,6 +98,12 @@
       text-underline-offset: 0.4em;
       text-decoration-skip-ink: none;
       text-decoration-skip: none;
+    }
+
+    &-normal {
+      --color: var(--color-control-typo-normal);
+      --color-hover: var(--color-control-typo-normal-hover);
+      --color-active: var(--color-control-typo-normal-hover);
     }
   }
 }

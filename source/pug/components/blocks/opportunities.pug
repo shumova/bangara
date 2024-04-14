@@ -61,10 +61,10 @@ mixin opportunities(props = {})
 
 
 
-  .opportunities
+  .opportunities&attributes(attributes)
     .container
       .opportunities__wrapper
-        .automation__content
+        .opportunities__content
           +title({
             tag: "h2",
             text: "Наши возможности"
@@ -72,7 +72,7 @@ mixin opportunities(props = {})
           .opportunities__list
             each item in list
               .opportunities__item.opportunity-card
-                .opportunity-card__decor(aria-hidden=true)
+                .opportunity-card__decor(aria-hidden="true")
                   +picture({
                     path: "content/opportunities",
                     name: item.background,
@@ -98,7 +98,13 @@ mixin opportunities(props = {})
                   })
                   +link({
                     text: "Детали",
-                    href: item.link
+                    href: "error.html",
+                    icon: {
+                      name: "icon-forward",
+                      width: 16,
+                      height: 17
+                    },
+                    modifiers: ["view-normal"]
                   })
 
 
