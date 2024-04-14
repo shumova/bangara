@@ -1,3 +1,49 @@
 mixin footer(footerMods)
+  -
+    const params = {
+      content: {
+        title: {
+          text: "Обсудить идею или проект",
+          modifiers: ["medium" ]
+        },
+        //- text: {
+        //-   content: [
+        //-     "Вы всегда можете связаться с нашим менеджером или оставить заявку",
+        //-     "+7 (925) - 001-00-24"
+        //-   ]
+        //- }
+      },
+      decor: {
+          path: "content",
+          name: "footer-bg",
+          format: "png",
+          width: "1555",
+          height: "362",
+      },
+      logo: {
+        isIndex: true,
+        img: {
+          path: "content/logo",
+          name: "logo-small",
+          format: "png",
+          width: "56",
+          height: "60",
+          altText: "Логотип ЦФР"
+        }
+      },
+    }
+
   footer.footer(class=footerMods)
+    .footer__decor
+      +picture(params.decor)
     .container
+      .footer__inner-wrapper
+        .footer__content
+          +title(params.content.title)
+          .text
+            span Вы всегда можете связаться с&nbsp;нашим менеджером или оставить заявку
+            span +7 (925) - 001-00-24
+        +feedback-form()
+        .footer__logo-block
+          +logo(params.logo)
+          span.footer__logo-text Цифровые Финансовые Решения (ЦФР)

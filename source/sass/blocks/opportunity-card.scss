@@ -1,0 +1,54 @@
+.opportunity-card {
+  display: grid;
+  border-radius: 4px;
+  transition: outline $trans-default;
+  border: 1px solid rgba(27, 27, 27, 0.15);
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+
+  &:hover {
+    outline: 2px solid #308fff;
+  }
+
+  &__decor,
+  &__content {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  &__content {
+    padding: 24px 24px 36px;
+  }
+
+  &__img {
+    border-radius: 4px;
+    overflow: hidden;
+
+    img {
+      border-radius: 4px;
+    }
+  }
+
+  .title {
+    display: block;
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 45px;
+    letter-spacing: 0.25px;
+    color: #1B1B1B;
+  }
+
+  .text {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.15px;
+    color: #1B1B1B;
+  }
+
+  .link {
+    margin-top: 28px;
+  }
+}

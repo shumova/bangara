@@ -9,6 +9,7 @@
 // ---------------------------------
 
 @import "variables";
+@import "variables/index";
 @import "mixins";
 @import "functions";
 @import "global/fonts";
@@ -16,20 +17,47 @@
 @import "global/utils";
 @import "global/container";
 
+// Components
+// ---------------------------------
+
+@import "../components/logo/style/logo";
+@import "../components/title/style/title";
+@import "../components/text/style/text";
+@import "../components/buttons/button/style/button";
+@import "../components/buttons/icon-button/style/icon-button";
+@import "../components/links/link/style/link";
+@import "../components/cards/card/style/card";
+@import "../components/cards/base-card/style/base-card";
+@import "../components/grid/style/grid";
+
+// ---------------------------------
+
 // Blocks
 // ---------------------------------
 
 @import "blocks/header";
-@import "blocks/main-nav";
 @import "blocks/footer";
-@import "blocks/modal";
-@import "blocks/btn";
-@import "blocks/custom-input";
-@import "blocks/custom-toggle";
-@import "blocks/custom-select";
-@import "blocks/input-upload";
+@import "blocks/page";
+@import "blocks/page-nav";
+@import "blocks/nav-list";
+@import "blocks/user-menu";
+@import "blocks/intro";
+@import "blocks/standalone-form";
+@import "blocks/blockquote";
+@import "blocks/automation";
+@import "blocks/opportunities";
+@import "blocks/opportunity-card";
 
-// ---------------------------------
+@import "blocks/details";
+
+@import "blocks/custom-input";
+@import "blocks/feedback-form";
+@import "blocks/login-form";
+
+@import "blocks/in-work";
+@import "blocks/login";
+
+
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg
 

@@ -1,10 +1,43 @@
-mixin intro()
+mixin intro(props = {})
   .intro
-    //- вставлять блоки во внешний контейнер неверно
-    //- все блоки содержат в себе container без доп класса tutorial__wrapper
     .container
-      p(style="margin-top: 40px;") Текст&nbsp;с&nbsp;мнемониками
-
-      p(style="margin-top: 40px;") Пример использования +img()
-      p(style="margin-bottom: 40px;")
-        +img("content", "placeholder", "png", 120, 120, "Пример")
+      .intro__wrapper
+        .intro__content
+          +title({
+            tag: "h1",
+            text: "IT Решения для Вашего Бизнеса"
+          })
+          +text({
+            content: [
+              "Простая и гибкая автоматизация продаж, документооборота, согласования электронного архива, CRM и других бизнес-процессов"
+            ]
+          })
+          +begin-form()
+        .intro__img
+          +picture({
+            path: "content",
+            name: "intro",
+            format: "png",
+            width: "473",
+            height: "455",
+            altText: "Рабочий процесс."
+          })
+        ul.intro__partners
+          li.intro__partner
+            +picture({
+              path: "content",
+              name: "tkb",
+              format: "png",
+              width: "169",
+              height: "66",
+              altText: "Логотип ТКБ."
+            })
+          li.intro__partner
+            +picture({
+              path: "content",
+              name: "skolkovo",
+              format: "png",
+              width: "220",
+              height: "64",
+              altText: "Логотип ТКБ."
+            })

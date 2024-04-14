@@ -1,13 +1,57 @@
 .header {
-  padding: 28px 0;
+  --header-padding: #{$space-l};
 
-  background-color: $color-neon-blue;
+  position: relative;
+  padding: var(--header-padding) 0;
+  background-color: $color-base-project;
+  color: var(--color-typo-essential);
+  overflow: hidden;
 
-  .container {
-    display: flex;
+  &__decor {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    img {
+      max-width: none;
+      object-fit: cover;
+    }
   }
 
-  &__logo {
-    color: $color-default-white;
+  .container {
+    position: relative;
+  }
+
+  &__inner-wrapper {
+    display: grid;
+    grid-template-columns: 380px minmax(0, 1fr) 380px;
+    gap: $space-2xl;
+    align-items: center;
+  }
+
+  .logo {
+    width: 378px;
+    height: 92px;
+
+    @include vp-767 {
+      position: relative;
+      width: 92px;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left;
+      }
+    }
+  }
+
+  .page-nav {
+    justify-self: center;
   }
 }

@@ -1,0 +1,6 @@
+mixin page-nav(params = {})
+
+  nav.page-nav&attributes(attributes)
+    .page-nav__content
+      //- +burger().page-nav__toggle(data-page-nav="toggle")
+      +nav-list(params.navList).page-nav__list
