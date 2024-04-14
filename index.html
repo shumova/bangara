@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html class="theme-default no-scrollbar" lang="ru">
+  <head>
+    <title>ЦФР — IT решения для вашего бизнеса</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="ЦФР — IT решения для вашего бизнеса">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest" crossorigin="use-credentials">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preload" href="fonts/inter-v13-cyrillic_latin-900.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/inter-v13-cyrillic_latin-500.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header" data-page-nav="container">
+        <div class="header__decor">
+          <picture>
+            <source type="image/webp" srcset="img/content/header-bg.webp, img/content/header-bg@2x.webp 2x"><img src="img/content/header-bg.png" srcset="img/content/header-bg@2x.png 2x" width="1555" height="362" alt="">
+          </picture>
+        </div>
+        <div class="container">
+          <div class="header__inner-wrapper">
+            <span class="logo">
+              <picture>
+                <source type="image/webp" srcset="img/content/logo/logo-light.webp, img/content/logo/logo-light@2x.webp 2x"><img src="img/content/logo/logo-light.png" srcset="img/content/logo/logo-light@2x.png 2x" width="378" height="92" alt="Перейти на главную страницу" aria-hidden="true">
+              </picture>
+            </span>
+            <button class="burger header__toggle" type="button" aria-pressed="false" aria-label="Open menu" data-toggle-target="menu" data-toggle data-page-nav="toggle"><span class="burger__wrapper"><span></span></span></button>
+            <div class="header__nav" data-page-nav="content">
+              <nav class="page-nav">
+                <div class="page-nav__content">
+                  <ul class="nav-list page-nav__list">
+                    <li class="nav-list__item">
+                      <a class="link link--view-secondary nav-list__link" href="#about"><span class="link__text">О компании</span>
+                      </a>
+                    </li>
+                    <li class="nav-list__item">
+                      <a class="link link--view-secondary nav-list__link" href="#products"><span class="link__text">Продукты</span>
+                      </a>
+                    </li>
+                    <li class="nav-list__item">
+                      <a class="link link--view-secondary nav-list__link" href="#contacts"><span class="link__text">Контакты</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <div class="user-menu">
+                <a class="link link--view-secondary user-menu__login-link" href="login.html"><span class="link__text">Личный кабинет</span>
+                  <svg width="16" height="17" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-new-window"></use>
+                  </svg>
+                </a>
+                <a class="button button--view-primary button--form-round-xs user-menu__begin-btn" href="#contacts"><span class="button__text">Начать</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="intro">
+          <div class="container">
+            <div class="intro__wrapper">
+              <div class="intro__content">
+                <h1 class="title">IT Решения для Вашего Бизнеса</h1>
+                <div class="text">
+                  <p>Простая и гибкая автоматизация продаж, документооборота, согласования электронного архива, CRM и других бизнес-процессов</p>
+                </div>
+                <div class="begin-form standalone-form" data-validate data-callback="feedback">
+                  <form action="#" method="post">
+                    <div class="custom-input standalone-form__item" data-validate-type="email" data-required>
+                      <label><span class="visually-hidden">E-mail</span>
+                        <input type="text" name="email" minlength="1" placeholder="Введите ваш E-mail">
+                      </label>
+                    </div>
+                    <a class="button button--view-primary standalone-form__submit" href="#"><span class="button__text">Начать</span>
+                    </a>
+                  </form>
+                </div>
+              </div>
+              <div class="intro__img">
+                <picture>
+                  <source type="image/webp" srcset="img/content/intro.webp, img/content/intro@2x.webp 2x"><img src="img/content/intro.png" srcset="img/content/intro@2x.png 2x" width="473" height="455" alt="Рабочий процесс.">
+                </picture>
+              </div>
+              <ul class="intro__partners">
+                <li class="intro__partner">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/tkb.webp, img/content/tkb@2x.webp 2x"><img src="img/content/tkb.png" srcset="img/content/tkb@2x.png 2x" width="169" height="66" alt="Логотип ТКБ.">
+                  </picture>
+                </li>
+                <li class="intro__partner">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/skolkovo.webp, img/content/skolkovo@2x.webp 2x"><img src="img/content/skolkovo.png" srcset="img/content/skolkovo@2x.png 2x" width="220" height="64" alt="Логотип ТКБ.">
+                  </picture>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="automation" id="about">
+          <div class="container">
+            <div class="automation__wrapper">
+              <div class="automation__content">
+                <h2 class="title">Автоматизация ваших бизнес процессов</h2>
+                <div class="text">
+                  <p>Мы предоставляем IT услуги без традиционных сложностей ITSM-решений</p>
+                </div>
+                <div class="details automation__advantages">
+                  <details data-details="details">
+                    <summary data-details="summary">Надежность<span class="icon-tick">
+                        <svg width="16" height="16" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-tick"></use>
+                        </svg></span><span class="icon-expanded">
+                        <svg width="8" height="12" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-expanded"></use>
+                        </svg></span></summary>
+                    <div class="details__content" data-details="content">
+                      <p>Мы&nbsp;стоим на&nbsp;страже ваших интересов, предоставляя гарантии высочайшего уровня. <b>Ваша безопасность&nbsp;&mdash; наш приоритет!</b></p>
+                    </div>
+                  </details>
+                  <details data-details="details">
+                    <summary data-details="summary">Инновации<span class="icon-tick">
+                        <svg width="16" height="16" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-tick"></use>
+                        </svg></span><span class="icon-expanded">
+                        <svg width="8" height="12" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-expanded"></use>
+                        </svg></span></summary>
+                    <div class="details__content" data-details="content">
+                      <p>Мы&nbsp;используем передовые технологии лучшие практики. С&nbsp;нами&nbsp;&mdash; Ваш бизнес на&nbsp;переднем крае развития</p>
+                    </div>
+                  </details>
+                  <details data-details="details">
+                    <summary data-details="summary">Индивидуальный подход<span class="icon-tick">
+                        <svg width="16" height="16" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-tick"></use>
+                        </svg></span><span class="icon-expanded">
+                        <svg width="8" height="12" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-expanded"></use>
+                        </svg></span></summary>
+                    <div class="details__content" data-details="content">
+                      <p>Каждый клиент&nbsp;&mdash; уникален.Мы&nbsp;разрабатываем решения, соответствующие именно вашим потребностям, и&nbsp;стремимся создать индивидуальный опыт сотрудничества</p>
+                    </div>
+                  </details>
+                </div>
+                <div class="text">
+                  <p>Охватываем все процессы и действия по проектированию, созданию, имплементации и поддержке ИТ-услуг</p>
+                </div>
+              </div>
+              <div class="automation__imgs">
+                <div class="automation__img">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/automation/automation-1.webp, img/content/automation/automation-1@2x.webp 2x"><img src="img/content/automation/automation-1.jpg" srcset="img/content/automation/automation-1@2x.jpg 2x" width="235" height="144" alt="Интерфейс системы.">
+                  </picture>
+                </div>
+                <div class="automation__img">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/automation/automation-2.webp, img/content/automation/automation-2@2x.webp 2x"><img src="img/content/automation/automation-2.jpg" srcset="img/content/automation/automation-2@2x.jpg 2x" width="343" height="122" alt="Интерфейс системы.">
+                  </picture>
+                </div>
+                <div class="automation__img">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/automation/automation-3.webp, img/content/automation/automation-3@2x.webp 2x"><img src="img/content/automation/automation-3.jpg" srcset="img/content/automation/automation-3@2x.jpg 2x" width="235" height="261" alt="Интерфейс системы.">
+                  </picture>
+                </div>
+                <div class="automation__img">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/automation/automation-4.webp, img/content/automation/automation-4@2x.webp 2x"><img src="img/content/automation/automation-4.jpg" srcset="img/content/automation/automation-4@2x.jpg 2x" width="296" height="147" alt="Интерфейс системы.">
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="opportunities" id="products">
+          <div class="container">
+            <div class="opportunities__wrapper">
+              <div class="opportunities__content">
+                <h2 class="title opportunities__title">Наши возможности</h2>
+                <div class="opportunities__list">
+                  <div class="opportunities__item opportunity-card">
+                    <div class="opportunity-card__decor" aria-hidden="true">
+                      <picture>
+                        <source type="image/webp" srcset="img/content/opportunities/opportunities-bg-1.webp, img/content/opportunities/opportunities-bg-1@2x.webp 2x"><img src="img/content/opportunities/opportunities-bg-1.jpg" srcset="img/content/opportunities/opportunities-bg-1@2x.jpg 2x" width="640" height="295" alt="">
+                      </picture>
+                    </div>
+                    <div class="opportunity-card__content">
+                      <div class="opportunity-card__img">
+                        <picture>
+                          <source type="image/webp" srcset="img/content/opportunities/documents.webp, img/content/opportunities/documents@2x.webp 2x"><img src="img/content/opportunities/documents.jpg" srcset="img/content/opportunities/documents@2x.jpg 2x" width="52" height="52" alt="">
+                        </picture>
+                      </div>
+                      <span class="title">Финансовые документы</span>
+                      <div class="text">
+                        <p>Согласование счетов, актов, отгрузок.</p>
+                        <p>Контроль оплат и&nbsp;графики платежей</p>
+                      </div>
+                      <a class="link link--view-normal" href="error.html"><span class="link__text">Детали</span>
+                        <svg width="16" height="17" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-forward"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="opportunities__item opportunity-card">
+                    <div class="opportunity-card__decor" aria-hidden="true">
+                      <picture>
+                        <source type="image/webp" srcset="img/content/opportunities/opportunities-bg-2.webp, img/content/opportunities/opportunities-bg-2@2x.webp 2x"><img src="img/content/opportunities/opportunities-bg-2.jpg" srcset="img/content/opportunities/opportunities-bg-2@2x.jpg 2x" width="640" height="295" alt="">
+                      </picture>
+                    </div>
+                    <div class="opportunity-card__content">
+                      <div class="opportunity-card__img">
+                        <picture>
+                          <source type="image/webp" srcset="img/content/opportunities/circulation.webp, img/content/opportunities/circulation@2x.webp 2x"><img src="img/content/opportunities/circulation.jpg" srcset="img/content/opportunities/circulation@2x.jpg 2x" width="52" height="52" alt="">
+                        </picture>
+                      </div>
+                      <span class="title">Документооборот</span>
+                      <div class="text">
+                        <p>Автоматизация соглаосваний договоров, документов и&nbsp;контрагентов</p>
+                      </div>
+                      <a class="link link--view-normal" href="error.html"><span class="link__text">Детали</span>
+                        <svg width="16" height="17" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-forward"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="opportunities__item opportunity-card">
+                    <div class="opportunity-card__decor" aria-hidden="true">
+                      <picture>
+                        <source type="image/webp" srcset="img/content/opportunities/opportunities-bg-3.webp, img/content/opportunities/opportunities-bg-3@2x.webp 2x"><img src="img/content/opportunities/opportunities-bg-3.jpg" srcset="img/content/opportunities/opportunities-bg-3@2x.jpg 2x" width="640" height="295" alt="">
+                      </picture>
+                    </div>
+                    <div class="opportunity-card__content">
+                      <div class="opportunity-card__img">
+                        <picture>
+                          <source type="image/webp" srcset="img/content/opportunities/crm.webp, img/content/opportunities/crm@2x.webp 2x"><img src="img/content/opportunities/crm.jpg" srcset="img/content/opportunities/crm@2x.jpg 2x" width="52" height="52" alt="">
+                        </picture>
+                      </div>
+                      <span class="title">CRM и&nbsp;продажи</span>
+                      <div class="text">
+                        <p>Автоматизация продаж, маркетинг взаимоотношений</p>
+                      </div>
+                      <a class="link link--view-normal" href="error.html"><span class="link__text">Детали</span>
+                        <svg width="16" height="17" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-forward"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="opportunities__item opportunity-card">
+                    <div class="opportunity-card__decor" aria-hidden="true">
+                      <picture>
+                        <source type="image/webp" srcset="img/content/opportunities/opportunities-bg-4.webp, img/content/opportunities/opportunities-bg-4@2x.webp 2x"><img src="img/content/opportunities/opportunities-bg-4.jpg" srcset="img/content/opportunities/opportunities-bg-4@2x.jpg 2x" width="640" height="295" alt="">
+                      </picture>
+                    </div>
+                    <div class="opportunity-card__content">
+                      <div class="opportunity-card__img">
+                        <picture>
+                          <source type="image/webp" srcset="img/content/opportunities/applications.webp, img/content/opportunities/applications@2x.webp 2x"><img src="img/content/opportunities/applications.jpg" srcset="img/content/opportunities/applications@2x.jpg 2x" width="52" height="52" alt="">
+                        </picture>
+                      </div>
+                      <span class="title">Заявки и&nbsp;сервис</span>
+                      <div class="text">
+                        <p>Автоматизация обработки заявок сотрудников, клиентов и&nbsp;партнеров</p>
+                      </div>
+                      <a class="link link--view-normal" href="error.html"><span class="link__text">Детали</span>
+                        <svg width="16" height="17" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-forward"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="opportunities__item opportunity-card">
+                    <div class="opportunity-card__decor" aria-hidden="true">
+                      <picture>
+                        <source type="image/webp" srcset="img/content/opportunities/opportunities-bg-5.webp, img/content/opportunities/opportunities-bg-5@2x.webp 2x"><img src="img/content/opportunities/opportunities-bg-5.jpg" srcset="img/content/opportunities/opportunities-bg-5@2x.jpg 2x" width="640" height="295" alt="">
+                      </picture>
+                    </div>
+                    <div class="opportunity-card__content">
+                      <div class="opportunity-card__img">
+                        <picture>
+                          <source type="image/webp" srcset="img/content/opportunities/purchases.webp, img/content/opportunities/purchases@2x.webp 2x"><img src="img/content/opportunities/purchases.jpg" srcset="img/content/opportunities/purchases@2x.jpg 2x" width="52" height="52" alt="">
+                        </picture>
+                      </div>
+                      <span class="title">Управление закупками</span>
+                      <div class="text">
+                        <p>Автоматизация закупочных и&nbsp;тендерных процедур в&nbsp;компании</p>
+                      </div>
+                      <a class="link link--view-normal" href="error.html"><span class="link__text">Детали</span>
+                        <svg width="16" height="17" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-forward"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="opportunities__item opportunity-card">
+                    <div class="opportunity-card__decor" aria-hidden="true">
+                      <picture>
+                        <source type="image/webp" srcset="img/content/opportunities/opportunities-bg-6.webp, img/content/opportunities/opportunities-bg-6@2x.webp 2x"><img src="img/content/opportunities/opportunities-bg-6.jpg" srcset="img/content/opportunities/opportunities-bg-6@2x.jpg 2x" width="640" height="295" alt="">
+                      </picture>
+                    </div>
+                    <div class="opportunity-card__content">
+                      <div class="opportunity-card__img">
+                        <picture>
+                          <source type="image/webp" srcset="img/content/opportunities/archive.webp, img/content/opportunities/archive@2x.webp 2x"><img src="img/content/opportunities/archive.jpg" srcset="img/content/opportunities/archive@2x.jpg 2x" width="52" height="52" alt="">
+                        </picture>
+                      </div>
+                      <span class="title">Электронный архив</span>
+                      <div class="text">
+                        <p>Автоматизация хранения скан-копий и&nbsp;оригиналов</p>
+                      </div>
+                      <a class="link link--view-normal" href="error.html"><span class="link__text">Детали</span>
+                        <svg width="16" height="17" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-forward"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="blockquote">
+          <div class="container">
+            <figure><span class="blockquote__icon">
+                <svg width="48" height="36" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-quotes"></use>
+                </svg></span>
+              <blockquote>
+                <p class="blockquote__text">Продукты ЦФР просто великолепены. Они содержат множество готовых компонентов и&nbsp;страниц, от&nbsp;экрана входа в&nbsp;систему до&nbsp;сложных информационых панелей. Идеальный выбор для вашего бизнеса&quot;</p>
+              </blockquote>
+              <figcaption>
+                <div class="blockquote__img">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/ceo.webp, img/content/ceo@2x.webp 2x"><img src="img/content/ceo.jpg" srcset="img/content/ceo@2x.jpg 2x" width="71" height="94" alt="Константин Бойков">
+                  </picture>
+                </div><span class="blockquote__name">Константин Бойков<span class="blockquote__separator">/</span><span class="blockquote__position">CEO</span></span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </main>
+      <footer class="footer" id="contacts">
+        <div class="footer__decor">
+          <picture>
+            <source type="image/webp" srcset="img/content/footer-bg.webp, img/content/footer-bg@2x.webp 2x"><img src="img/content/footer-bg.png" srcset="img/content/footer-bg@2x.png 2x" width="1555" height="362" alt="">
+          </picture>
+        </div>
+        <div class="container">
+          <div class="footer__inner-wrapper">
+            <div class="footer__content">
+              <span class="title title--medium">Обсудить идею или проект</span>
+              <div class="text"><span>Вы всегда можете связаться с&nbsp;нашим менеджером или оставить заявку</span><span>+7 (925) - 001-00-24</span></div>
+            </div>
+            <div class="feedback-form" data-validate data-callback="feedback">
+              <form action="#" method="post">
+                <div class="custom-input custom-input--ghost feedback-form__item" data-validate-type="email" data-required>
+                  <label><span class="visually-hidden">E-mail</span>
+                    <input type="text" name="email" minlength="1" placeholder="E-mail">
+                  </label>
+                </div>
+                <div class="custom-input custom-input--ghost feedback-form__item" data-validate-type="phone" data-required>
+                  <label><span class="visually-hidden">Телефон</span>
+                    <input type="text" name="phone" placeholder="Телефон">
+                  </label>
+                </div>
+                <button class="button button--view-accent button--form-round-xs feedback-form__submit" type="submit"><span class="button__text">Оставить заявку</span>
+                </button>
+              </form>
+            </div>
+            <div class="footer__logo-block">
+              <span class="logo">
+                <picture>
+                  <source type="image/webp" srcset="img/content/logo/logo-small.webp, img/content/logo/logo-small@2x.webp 2x"><img src="img/content/logo/logo-small.png" srcset="img/content/logo/logo-small@2x.png 2x" width="56" height="60" alt="Логотип ЦФР" aria-hidden="true">
+                </picture>
+              </span><span class="footer__logo-text">Цифровые Финансовые Решения (ЦФР)</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
