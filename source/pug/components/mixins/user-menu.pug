@@ -1,7 +1,7 @@
 mixin user-menu(props = {})
   - const {loginLink, beginBtn, currentUrl} = props
 
-  ul.user-menu&attributes(attributes)
+  .user-menu&attributes(attributes)
     - const isActive = currentUrl === loginLink.href
     - const tag = isActive ? "span" : "a"
 

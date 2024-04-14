@@ -6,21 +6,20 @@ import {uploadFile, uploadImageDrop} from './modules/input-file/init-upload';
 import {initToggles} from './modules/toggle/init-toggle';
 import {initPageNav} from './modules/page-nav/page-nav';
 import {initDetails} from './modules/details/details';
-import {initCustomSelect} from './modules/form/init-custom-select';
 import {initFormValidate} from './modules/form/init-form-validate';
+import {initHeaderHeight} from './init-header-height';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
   // ---------------------------------
-
+  initHeaderHeight();
   mobileVhFix();
   initToggles();
   initPageNav();
   initDetails();
 
-  initCustomSelect();
   initFormValidate();
 
   // Modules

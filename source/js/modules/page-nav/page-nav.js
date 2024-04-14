@@ -4,7 +4,6 @@ class PageNav {
   constructor() {
     this.container = document.querySelector('[data-page-nav="container"]');
     this.content = this.container && document.querySelector('[data-page-nav="content"]');
-    this.nav = this.container && this.container.querySelector('[data-page-nav="list"]');
     this.toggle = this.container && this.container.querySelector('[data-page-nav="toggle"]');
 
     this.breakpoint = {
@@ -16,9 +15,6 @@ class PageNav {
 
     this._documentClickHandler = this._documentClickHandler.bind(this);
     this._documentKeydownHandler = this._documentKeydownHandler.bind(this);
-
-    this._toggleMouseoverHandler = this._toggleMouseoverHandler.bind(this);
-    this._toggleMouseoutHandler = this._toggleMouseoutHandler.bind(this);
 
     this._windowResizeHandler = this._windowResizeHandler.bind(this);
 
@@ -36,9 +32,6 @@ class PageNav {
   _addListeners() {
     document.addEventListener('click', this._documentClickHandler);
     document.addEventListener('keydown', this._documentKeydownHandler);
-
-    this.toggle.addEventListener('mouseover', this._toggleMouseoverHandler);
-    this.toggle.addEventListener('mouseout', this._toggleMouseoutHandler);
 
     this.container.addEventListener('transitionend', this._containerTransitionendHandler);
 
@@ -80,22 +73,14 @@ class PageNav {
     }
   }
 
-  _toggleMouseoverHandler() {
-    this.container.classList.add('is-ajar');
-  }
-
-  _toggleMouseoutHandler() {
-    this.container.classList.remove('is-ajar');
-  }
-
   _windowResizeHandler() {
     this.content.classList.add('no-transition');
 
     setTimeout(() => this.content.classList.remove('no-transition'), 400);
 
     if (!this.breakpoint.tablet.matches) {
-      if (this.container.classList.contains('is-open')) {
-        this.container.classList.remove('is-open');
+      if (this.container.classList.contains('is-opened')) {
+        this.container.classList.remove('is-opened');
       }
 
       if (this.toggle.classList.contains('is-active')) {
@@ -106,14 +91,14 @@ class PageNav {
 
   open() {
     this.isOpen = true;
-    this.container.classList.add('is-open');
+    this.container.classList.add('is-opened');
 
     this._disableToggleEvents();
   }
 
   close() {
     this.isOpen = false;
-    this.container.classList.remove('is-open');
+    this.container.classList.remove('is-opened');
 
     this._disableToggleEvents();
   }

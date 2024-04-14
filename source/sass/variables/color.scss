@@ -97,7 +97,7 @@ $color-base-normal: #308fff; /* Цвет нейтральный */
   // Secondary
   --color-control-typo-secondary: #{$color-base-essential};
   --color-control-typo-secondary-hover: #{$color-base-essential};
-  --color-control-typo-secondary-hover: #{$color-base-essential};
+  --color-control-typo-secondary-active: #{$color-base-essential};
 
   --color-control-bg-secondary: #4642ec;
   --color-control-bg-secondary-hover: #{color.adjust(#4642ec, $lightness: +9%)};

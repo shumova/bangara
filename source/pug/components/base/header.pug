@@ -51,11 +51,13 @@ mixin header(headerMods, currentUrl)
       }
     }
 
-  header.header(class=headerMods)
+  header.header(class=headerMods, data-page-nav="container")
     .header__decor
       +picture(params.decor)
     .container
       .header__inner-wrapper
         +logo(params.logo)
-        +page-nav(params.pageNav)
-        +user-menu(params.userMenu)
+        +burger().header__toggle(data-page-nav="toggle")
+        .header__nav(data-page-nav="content")
+          +page-nav(params.pageNav)
+          +user-menu(params.userMenu)
