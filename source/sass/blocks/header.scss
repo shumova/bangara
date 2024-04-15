@@ -10,14 +10,21 @@
   }
 
   &__decor {
-    display: none;
+    --top-offset: 25px;
     position: absolute;
-    top: -14%;
-    left: 18%;
+    top: calc(var(--top-offset) * -1);
+    left: 50%;
+    height: calc(100% + var(--top-offset));
+    overflow: hidden;
+    transform: translateX(-48%);
 
     img {
       max-width: none;
       object-fit: cover;
+    }
+
+    @include vp-1023 {
+      display: none;
     }
   }
 
@@ -35,10 +42,10 @@
   &__inner-wrapper {
     padding: var(--header-padding) 0;
     grid-template-columns: clamp(280px, 28vw, 380px) minmax(0, 1fr);
-    background-color: $color-base-project;
 
     @include vp-1023 {
       grid-template-columns: minmax(0, 1fr) 80px;
+      background-color: $color-base-project;
     }
   }
 
