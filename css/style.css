@@ -1760,15 +1760,24 @@ svg + .link__text, .link__text + svg {
   }
 }
 .header__decor {
-  display: none;
+  --top-offset: 25px;
   position: absolute;
-  top: -14%;
-  left: 18%;
+  top: calc(var(--top-offset) * -1);
+  left: 50%;
+  height: calc(100% + var(--top-offset));
+  overflow: hidden;
+  -webkit-transform: translateX(-48%);
+          transform: translateX(-48%);
 }
 .header__decor img {
   max-width: none;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 1023px) {
+  .header__decor {
+    display: none;
+  }
 }
 .header .container {
   position: relative;
@@ -1783,11 +1792,11 @@ svg + .link__text, .link__text + svg {
 .header__inner-wrapper {
   padding: var(--header-padding) 0;
   grid-template-columns: clamp(280px, 28vw, 380px) minmax(0, 1fr);
-  background-color: #3734A9;
 }
 @media (max-width: 1023px) {
   .header__inner-wrapper {
     grid-template-columns: minmax(0, 1fr) 80px;
+    background-color: #3734A9;
   }
 }
 .header__nav {
