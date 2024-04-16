@@ -66,7 +66,6 @@
     flex-shrink: 0;
     height: 14px;
     width: auto;
-    fill: currentColor;
     transition: transform $trans-default;
     transform: translateZ(0);
   }
@@ -103,7 +102,13 @@
     &-normal {
       --color: var(--color-control-typo-normal);
       --color-hover: var(--color-control-typo-normal-hover);
-      --color-active: var(--color-control-typo-normal-hover);
+      --color-active: var(--color-control-typo-normal-active);
+    }
+
+    &-success {
+      --color: var(--color-control-typo-success);
+      --color-hover: var(--color-control-typo-success-hover);
+      --color-active: var(--color-control-typo-success-active);
     }
   }
 }

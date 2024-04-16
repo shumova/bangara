@@ -38,6 +38,8 @@
 
   &__content {
     position: relative;
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
     padding: 24px 24px 36px;
   }
 
@@ -75,6 +77,8 @@
   }
 
   .link {
+    align-self: end;
+    justify-self: left;
     margin-top: 28px;
     font-weight: 700;
     font-size: 14px;
