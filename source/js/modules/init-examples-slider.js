@@ -29,7 +29,6 @@ const initExamplesSlider = () => {
 
     pagination: {
       el: examplesSliderPagination,
-      bulletElement: 'button',
       clickable: true,
     },
   });

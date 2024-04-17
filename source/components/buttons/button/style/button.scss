@@ -1,3 +1,5 @@
+@use "sass:color";
+
 .button {
   // Базовые значения
   --padding: #{$control-space-m};
@@ -139,6 +141,18 @@
       --background-color: var(--color-control-bg-accent);
       --background-color-hover: var(--color-control-bg-accent-hover);
       --background-color-active: var(--color-control-bg-accent-active);
+    }
+  }
+
+  &--color {
+    &-black {
+      --color: #{$color-base-essential};
+      --color-hover: #{$color-base-essential};
+      --color-active: #{$color-base-essential};
+
+      --background-color: #000000;
+      --background-color-hover: #{color.adjust(#000000, $lightness: +20%)};
+      --background-color-active: #{color.adjust(#000000, $lightness: +20%)};
     }
   }
 
