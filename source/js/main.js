@@ -8,6 +8,7 @@ import {initPageNav} from './modules/page-nav/page-nav';
 import {initDetails} from './modules/details/details';
 import {initFormValidate} from './modules/form/init-form-validate';
 import {initHeaderHeight} from './init-header-height';
+import {initExamplesSlider} from './modules/init-examples-slider.js';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -36,6 +37,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    initExamplesSlider();
   });
 });
 
