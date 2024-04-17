@@ -40,11 +40,11 @@
                 <div class="page-nav__content">
                   <ul class="nav-list page-nav__list">
                     <li class="nav-list__item">
-                      <a class="link link--view-secondary nav-list__link" href="#about"><span class="link__text">О компании</span>
+                      <a class="link link--view-secondary nav-list__link" href="index.html#about"><span class="link__text">О компании</span>
                       </a>
                     </li>
                     <li class="nav-list__item">
-                      <a class="link link--view-secondary nav-list__link" href="#products"><span class="link__text">Продукты</span>
+                      <a class="link link--view-secondary nav-list__link" href="index.html#products"><span class="link__text">Продукты</span>
                       </a>
                     </li>
                     <li class="nav-list__item">
@@ -180,6 +180,68 @@
                   </picture>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+        <section class="about">
+          <div class="container">
+            <div class="about__wrapper">
+              <div class="about__heading">
+                <div class="about__logo">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/bangara.webp, img/content/bangara@2x.webp 2x"><img src="img/content/bangara.png" srcset="img/content/bangara@2x.png 2x" width="141" height="87" alt="" aria-hidden="true">
+                  </picture>
+                </div>
+                <div class="about__title-wrapper">
+                  <span class="title about__title">Бангара</span>
+                  <div class="about__tooltip tooltip">
+                    <button class="icon-button tooltip__control" type="button" aria-labelledby="notifications-label">
+                      <svg width="15" height="15" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-approve"></use>
+                      </svg>
+                    </button>
+                    <div class="tooltip__label" role="tooltip" id="notifications-label">Готовый продукт</div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="title about__subtitle">Инновационное решение для автоматизации продаж финансовых продуктов в B2B сегменте</h2>
+              <ul class="about__list">
+                <li class="about__item about-card">
+                  <span class="title">Автоматический скоринг</span>
+                  <div class="text">
+                    <p>Комплекс анализирует более 1000 параметров и&nbsp;хранит актуальные данные на&nbsp;своих серверах. Это позволяет мгновенно получать информацию, не&nbsp;обращаясь каждый раз во&nbsp;внешние базы</p>
+                  </div>
+                  <a class="link link--view-success" href="error.html"><span class="link__text">Читать больше</span>
+                    <svg width="16" height="17" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-forward"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="about__item about-card">
+                  <span class="title">Look alike</span>
+                  <div class="text">
+                    <p>Анализ списков недобросовестных поставщиков крупных компаний и&nbsp;отмечает контрагентов, существенно схожих с&nbsp;такими поставщиками. Признаки схожести указываются в&nbsp;досье заявителя</p>
+                  </div>
+                  <a class="link link--view-success" href="error.html"><span class="link__text">Читать больше</span>
+                    <svg width="16" height="17" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-forward"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="about__item about-card">
+                  <span class="title">Генерация документов</span>
+                  <div class="text">
+                    <p>Без участия человека формируется полный пакет документов. От&nbsp;клиента требуется только подписание через встроенный модуль ЭЦП</p>
+                  </div>
+                  <a class="link link--view-success" href="error.html"><span class="link__text">Читать больше</span>
+                    <svg width="16" height="17" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-forward"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <a class="button button--view-primary button--form-round-xs about__button" href="about.html"><span class="button__text">Подробнее о&nbsp;продукте</span>
+              </a>
             </div>
           </div>
         </section>
@@ -364,6 +426,7 @@
             <div class="footer__content">
               <span class="title title--medium">Обсудить идею или проект</span>
               <div class="text"><span>Вы всегда можете связаться с&nbsp;нашим менеджером или оставить заявку</span><span>+7 (925) - 001-00-24</span></div>
+              <address class="footer__address">109028, г. Москва, вн.тер.г. муниципальный округ басманный, пер хохловский, д.&nbsp;15, помещ. 3п</address>
             </div>
             <div class="feedback-form" data-validate data-callback="feedback">
               <form action="#" method="post">
@@ -377,16 +440,27 @@
                     <input type="text" name="phone" placeholder="Телефон">
                   </label>
                 </div>
+                <div class="custom-checkbox feedback-form__item" data-validate-type="checkbox" data-required>
+                  <label>
+                    <input type="checkbox" id="id-order-agreement" name="user-agreement"><span class="custom-checkbox__icon"></span><span class="custom-checkbox__label">Согласен на&nbsp;обработку моих&nbsp;
+                      <a class="link" href="agreement.html"><span class="link__text">персональных&nbsp;данных</span>
+                      </a></span>
+                  </label>
+                </div>
                 <button class="button button--view-accent button--form-round-xs feedback-form__submit" type="submit"><span class="button__text">Оставить заявку</span>
                 </button>
               </form>
             </div>
-            <div class="footer__logo-block">
+            <div class="footer__footer">
               <span class="logo">
                 <picture>
                   <source type="image/webp" srcset="img/content/logo/logo-small.webp, img/content/logo/logo-small@2x.webp 2x"><img src="img/content/logo/logo-small.png" srcset="img/content/logo/logo-small@2x.png 2x" width="56" height="60" alt="Логотип ЦФР" aria-hidden="true">
                 </picture>
-              </span><span class="footer__logo-text">Цифровые Финансовые Решения (ЦФР)</span>
+              </span>
+              <div class="footer__footer-content"><span class="footer__footer-text">&copy;&nbsp;ООО &laquo;Цифровые финансовые решения&raquo;, 2024&nbsp;г.</span>
+                <a class="link footer__footer-link" href="agreement.html"><span class="link__text">Политика обработки персональных данных</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
