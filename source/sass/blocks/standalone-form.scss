@@ -7,6 +7,8 @@
   border-radius: var(--form-border-radius);
 
   @include vp-767 {
+    --form-border-radius: 20px;
+
     padding: 25px 15px;
   }
 

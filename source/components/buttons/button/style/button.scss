@@ -151,8 +151,8 @@
       --color-active: #{$color-base-essential};
 
       --background-color: #000000;
-      --background-color-hover: #{color.adjust(#000000, $lightness: +20%)};
-      --background-color-active: #{color.adjust(#000000, $lightness: +20%)};
+      --background-color-hover: #{color.adjust(#000000, $lightness: +30%)};
+      --background-color-active: #{color.adjust(#000000, $lightness: +30%)};
     }
   }
 

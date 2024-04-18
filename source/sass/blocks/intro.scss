@@ -1,11 +1,11 @@
 .intro {
-  padding: 77px 0 46px;
+  padding: 77px 0 50px;
 
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     column-gap: clamp(20px, 4vw, 60px);
-    row-gap: 80px;
+    row-gap: 50px;
     place-items: center;
     align-content: center;
     max-width: 1180px;

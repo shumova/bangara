@@ -74,10 +74,7 @@
     box-shadow: inset 0px 2px 5px rgba(19, 18, 66, 0.1);
     border-radius: 4px;
     transition: opacity $trans-default, color $trans-default;
-
-    @include vp-767 {
-      top: -2px;
-    }
+    transform: translateY(-2px);
 
     &::before {
       content: "";
