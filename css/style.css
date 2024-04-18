@@ -1956,8 +1956,8 @@ svg + .button__text, .button__text + svg {
   --color-hover: #ffffff;
   --color-active: #ffffff;
   --background-color: #000000;
-  --background-color-hover: #333333;
-  --background-color-active: #333333;
+  --background-color-hover: #4d4d4d;
+  --background-color-active: #4d4d4d;
 }
 .button--form-round {
   --border-radius: 99rem;
@@ -2828,7 +2828,7 @@ svg + .link__text, .link__text + svg {
 }
 
 .intro {
-  padding: 77px 0 46px;
+  padding: 77px 0 50px;
 }
 .intro__wrapper {
   display: grid;
@@ -2836,7 +2836,7 @@ svg + .link__text, .link__text + svg {
   -webkit-column-gap: clamp(20px, 4vw, 60px);
      -moz-column-gap: clamp(20px, 4vw, 60px);
           column-gap: clamp(20px, 4vw, 60px);
-  row-gap: 80px;
+  row-gap: 50px;
   place-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -2917,6 +2917,7 @@ svg + .link__text, .link__text + svg {
 }
 @media (max-width: 767px) {
   .standalone-form {
+    --form-border-radius: 20px;
     padding: 25px 15px;
   }
 }
@@ -3611,11 +3612,8 @@ svg + .link__text, .link__text + svg {
   border-radius: 4px;
   -webkit-transition: opacity 400ms ease, color 400ms ease;
   transition: opacity 400ms ease, color 400ms ease;
-}
-@media (max-width: 767px) {
-  .custom-checkbox__icon {
-    top: -2px;
-  }
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 .custom-checkbox__icon::before {
   content: "";
