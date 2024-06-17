@@ -17,7 +17,8 @@ mixin features(props = {})
               ],
               description: [
                 "Скоринг разработан на&nbsp;основе методов&nbsp;ИИ, таких как глубокое обучение. В&nbsp;качестве технологий планируется использование open-source решений на&nbsp;базе Python, в&nbsp;частности, библиотек Keras и&nbsp;TensorFlow. При помощи нейронных сетей глубокого обучения будет прогнозироваться вероятность неплатежа по&nbsp;всем доступным факторам на&nbsp;основании накопленной статистики обслуживания кредитов"
-              ]
+              ],
+              id: "autoscoring"
             },
             {
               img: {
@@ -30,7 +31,8 @@ mixin features(props = {})
               title: "Взаиморасчеты",
               list: [
                 "Генерация отчетов из&nbsp;БД&nbsp;Комплекса", "Подписание через ЭЦП", "Загрузка и&nbsp;выгрзука файлов в&nbsp;удобном формате (xls, 1c)"
-              ]
+              ],
+              id: "autobill"
             },
             {
               isImgRight: true,
@@ -44,7 +46,8 @@ mixin features(props = {})
               title: "Автоквитовка",
               text: [
                 "Бангара сверяет поступившие в&nbsp;банковскую систему платежи с&nbsp;массивом поступающих заявок и&nbsp;производит их&nbsp;&laquo;квитовку&raquo;, автоматически переводя заявку на&nbsp;следующий статус. Получение данных из&nbsp;банковского SOAP сервиса происходит при помощи специального класса SOAPClient. Помимо &laquo;квитовки&raquo;, модуль производит сверку UID платежных документов с&nbsp;информацией в&nbsp;базе данных."
-              ]
+              ],
+              id: "generatedocs"
             },
             {
               img: {
@@ -68,7 +71,7 @@ mixin features(props = {})
                 width: "296",
                 height: "270",
               },
-              title: "Ядро Комплекса",
+              title: "Используемый стек технологий",
               listModifiers: ["feature__list--margin-size-l"],
               list: [
                 "В&nbsp;состав ядра системы входит сервис авторизации, сервис оркестратора, CRM система, система сбора логов на&nbsp;базе fluentd и&nbsp;ClickHouse.",
@@ -89,10 +92,11 @@ mixin features(props = {})
       .features__wrapper
         each param in params
           - const img = param.img
+          - const id = param.id
           - const isImgRight = param.isImgRight ? 'feature--img-right' : '';
           - const isImgFloat = param.isImgFloat ? 'feature--img-float' : '';
           - const modifiers = [isImgRight, isImgFloat];
-          .feature(class=[...modifiers])
+          .feature(class=[...modifiers] id=id)
             .feature__img
               +picture({
                 path: img.path,

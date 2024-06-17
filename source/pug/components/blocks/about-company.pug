@@ -1,0 +1,72 @@
+mixin about-company(props = {})
+  -
+    const
+          params = [
+            {
+              isImgFloat: true,
+              img: {
+                path: "content",
+                name: "company",
+                format: "png",
+                width: "614",
+                height: "546",
+              },
+              title: "Компания является командной профессионалов, имеющих опыт разработки и внедрения автоматизированных систем. Основными направлениями нашей работы являются:",
+              listModifiers: ["feature__list--margin-size-l"],
+              //- text: [
+              //-   "Основными направлениями нашей работы являются:"
+              //- ],
+              list: [
+                "Разработка автоматизированных систем продаж финансовых продуктов;",
+                "Анализ данных;",
+                "Поиск индивидуальных решений в области автоматизации;",
+                "Техническое сопровождение процесса автоматизации и т.д. (указать все направления)."
+              ]
+            }
+          ]
+  section.features.features--wide&attributes(attributes)
+    .container
+      .features__wrapper
+        each param in params
+          - const img = param.img
+          - const id = param.id
+          - const isImgRight = param.isImgRight ? 'feature--img-right' : '';
+          - const isImgFloat = param.isImgFloat ? 'feature--img-float' : '';
+          - const modifiers = [isImgRight, isImgFloat];
+          .feature(class=[...modifiers] id=id)
+            .feature__img.feature__img--bottom
+              +picture({
+                path: img.path,
+                name: img.name,
+                format: img.format,
+                width: img.width,
+                height: img.height,
+              })(aria-hidden="true")
+            .feature__content
+              +title({
+                  tag: "h2",
+                  text: "О компании"
+                }).feature__main-title
+              +title({
+                tag: "p",
+                text: param.title
+              }).feature__text.feature__text--size-m
+              if param.text
+                +text({
+                  content: param.text
+                }).feature__text.feature__text--size-m
+              if param.list
+                - const listModifiers = param.listModifiers || [];
+                ul.feature__list(class=[...listModifiers])
+                  each item in param.list
+                    li.feature__item
+                      .feature__icon
+                        +icon("icon-tick", 16, 16)
+                      !=item
+            if param.description
+              +text({
+                content: param.description
+              }).feature__description
+
+
+

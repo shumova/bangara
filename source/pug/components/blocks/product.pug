@@ -1,0 +1,134 @@
+mixin product(props = {})
+  -
+    const
+          list = [
+            {
+              title: "Автоматический скоринг",
+              content: [
+                "Комплекс анализирует более 1000 параметров и&nbsp;хранит актуальные данные на&nbsp;своих серверах. Это позволяет мгновенно получать информацию, не&nbsp;обращаясь каждый раз во&nbsp;внешние базы"
+              ],
+              link: "about.html#autoscoring"
+            },
+            {
+              title: "Look alike",
+              content: [
+                "Анализ списков недобросовестных поставщиков крупных компаний и&nbsp;отмечает контрагентов, существенно схожих с&nbsp;такими поставщиками. Признаки схожести указываются в&nbsp;досье заявителя"
+              ],
+              link: "about.html#autobill"
+            },
+            {
+              title: "Генерация документов",
+              content: [
+                "Без участия человека формируется полный пакет документов. От&nbsp;клиента требуется только подписание через встроенный модуль ЭЦП"
+              ],
+              link: "about.html#generatedocs"
+            }
+          ]
+
+
+
+  section.about.about--justify&attributes(attributes)
+    .container
+      .about__wrapper
+        .about__heading.about__heading--grid
+          .about__logo
+            +picture({
+              path: "content",
+              name: "bangara",
+              format: "png",
+              width: "141",
+              height: "87",
+            })(aria-hidden="true")
+          .about__title-wrapper
+            +title({
+              tag: "span",
+              text: "Бангара"
+            }).about__title
+            .about__tooltip.tooltip
+              +icon-button({
+                icon: {
+                  name: "icon-approve",
+                  width: "15",
+                  height: "15"
+                }
+              })(aria-labelledby="notifications-label").tooltip__control
+              .tooltip__label(role="tooltip", id="notifications-label") Готовый продукт
+        +title({
+          tag: "p",
+          text: "Инновационное решение для автоматизации продаж финансовых продуктов в B2B сегменте"
+        }).about__subtitle
+        .automation
+              +text({
+                content: [
+                  "Система обеспечивает автоматическую поддержку при реализации финансовых услуг. Анализ клиентских данных помогает предугадывать потребности и&nbsp;делать индивидуальные комплексные продуктовые предложения для клиентов.",
+                  "Автоматизированы все процессы, сопутствующие продаже и&nbsp;поддержанию жизненного цикла клиента. Система может быть использована на&nbsp;разных направлениях бизнеса, поможет выстраивать KPI и&nbsp;получать оперативную отчётность.",
+                  "Наши решения актуальны для различных сфер бизнеса:"
+                ],
+                modifiers: ["space-m"]
+              })
+              +details({
+                content: [
+                  {
+                    summary: "Продажи и маркетинг",
+                    description: "Автоматизация помогает отслеживать потенциальных клиентов, управлять сделками, анализировать эффективность маркетинговых кампаний и&nbsp;прогнозировать продажи.</b>"
+                  },
+                  {
+                    summary: "Обслуживание клиентов",
+                    description: "Автоматизация позволяет оперативно реагировать на&nbsp;запросы клиентов, обрабатывать обращения, контролировать качество обслуживания и&nbsp;удовлетворять потребности клиентов."
+                  },
+                  {
+                    summary: "Управление проектами",
+                    description: "Можно создавать проекты, назначать задачи, отслеживать прогресс выполнения и&nbsp;анализировать результаты. Это особенно полезно для команд, работающих над несколькими проектами одновременно."
+                  },
+                  {
+                    summary: "Аналитика и отчётность",
+                    description: "Предоставляются инструменты для анализа данных о&nbsp;клиентах, продажах, маркетинге и&nbsp;других аспектах бизнеса. Это помогает принимать обоснованные решения и&nbsp;улучшать бизнес-процессы."
+                  },
+                  {
+                    summary: "Сотрудничество и коммуникации",
+                    description: "Обеспечивается единое пространство для обмена информацией между сотрудниками, что способствует более эффективному взаимодействию и координации работы."
+                  }
+                ]
+              }).automation__advantages
+        //- ul.about__list
+        //-   each item in list
+        //-     li.about__item.about-card
+        //-       +title({
+        //-         tag: "span",
+        //-         text: item.title
+        //-       })
+        //-       +text({
+        //-         content: item.content
+        //-       })
+        //-       +link({
+        //-         text: "Читать больше",
+        //-         href: item.link,
+        //-         icon: {
+        //-           name: "icon-forward",
+        //-           width: 16,
+        //-           height: 17
+        //-         },
+        //-         modifiers: ["view-success"]
+        //-       })
+
+        +link({
+          text: "Перейти на сайт Bangara",
+          href: "https://bangara.ru/",
+          isExternal: true,
+          icon: {
+            name: "icon-forward",
+            width: 16,
+            height: 17
+          },
+          modifiers: ["view-success"]
+        }).about__forward-link
+
+        +button({
+          href: "about.html",
+          text: "Подробнее о&nbsp;продукте",
+          modifiers: ["view-primary", "form-round-xs"],
+        }).about__button
+
+
+
+

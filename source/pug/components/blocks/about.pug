@@ -7,21 +7,21 @@ mixin about(props = {})
               content: [
                 "Комплекс анализирует более 1000 параметров и&nbsp;хранит актуальные данные на&nbsp;своих серверах. Это позволяет мгновенно получать информацию, не&nbsp;обращаясь каждый раз во&nbsp;внешние базы"
               ],
-              link: "#"
+              link: "about.html#autoscoring"
             },
             {
               title: "Look alike",
               content: [
                 "Анализ списков недобросовестных поставщиков крупных компаний и&nbsp;отмечает контрагентов, существенно схожих с&nbsp;такими поставщиками. Признаки схожести указываются в&nbsp;досье заявителя"
               ],
-              link: "#"
+              link: "about.html#autobill"
             },
             {
               title: "Генерация документов",
               content: [
                 "Без участия человека формируется полный пакет документов. От&nbsp;клиента требуется только подписание через встроенный модуль ЭЦП"
               ],
-              link: "#"
+              link: "about.html#generatedocs"
             }
           ]
 
@@ -31,32 +31,40 @@ mixin about(props = {})
     .container
       .about__wrapper
         .about__heading
-          .about__logo
-            +picture({
-              path: "content",
-              name: "bangara",
-              format: "png",
-              width: "141",
-              height: "87",
-            })(aria-hidden="true")
+          //- .about__logo
+          //-   +picture({
+          //-     path: "content",
+          //-     name: "bangara",
+          //-     format: "png",
+          //-     width: "141",
+          //-     height: "87",
+          //-   })(aria-hidden="true")
           .about__title-wrapper
+            //- +title({
+            //-   tag: "span",
+            //-   text: "Бангара"
+            //- }).about__title
             +title({
-              tag: "span",
-              text: "Бангара"
+              tag: "h2",
+              text: "Решения"
             }).about__title
-            .about__tooltip.tooltip
-              +icon-button({
-                icon: {
-                  name: "icon-approve",
-                  width: "15",
-                  height: "15"
-                }
-              })(aria-labelledby="notifications-label").tooltip__control
-              .tooltip__label(role="tooltip", id="notifications-label") Готовый продукт
+            //- .about__tooltip.tooltip
+            //-   +icon-button({
+            //-     icon: {
+            //-       name: "icon-approve",
+            //-       width: "15",
+            //-       height: "15"
+            //-     }
+            //-   })(aria-labelledby="notifications-label").tooltip__control
+            //-   .tooltip__label(role="tooltip", id="notifications-label") Готовый продукт
+        //- +title({
+        //-   tag: "p",
+        //-   text: "Инновационное решение для автоматизации продаж финансовых продуктов в B2B сегменте"
+        //- }).about__subtitle
         +title({
-          tag: "h2",
-          text: "Инновационное решение для автоматизации продаж финансовых продуктов в B2B сегменте"
-        }).about__subtitle
+          tag: "p",
+          text: "Специализируемся на&nbsp;IT услугах для бизнеса в&nbsp;сфере автоматизации продаж финансовых продуктов. Мониторинг и&nbsp;техподдержка, сопровождение, аналитика."
+        }).about__subtitle.about__subtitle--narow
         ul.about__list
           each item in list
             li.about__item.about-card
@@ -69,7 +77,7 @@ mixin about(props = {})
               })
               +link({
                 text: "Читать больше",
-                href: "about.html",
+                href: item.link,
                 icon: {
                   name: "icon-forward",
                   width: 16,
@@ -77,11 +85,11 @@ mixin about(props = {})
                 },
                 modifiers: ["view-success"]
               })
-        +button({
-          href: "about.html",
-          text: "Подробнее о&nbsp;продукте",
-          modifiers: ["view-primary", "form-round-xs"],
-        }).about__button
+        //- +button({
+        //-   href: "about.html",
+        //-   text: "Подробнее о&nbsp;продукте",
+        //-   modifiers: ["view-primary", "form-round-xs"],
+        //- }).about__button
 
 
 
