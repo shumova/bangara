@@ -3982,6 +3982,7 @@ svg + .link__text, .link__text + svg {
 
 .about-card {
   display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr);
   padding: 45px 30px 40px;
   background: #ffffff;
   border: 1px solid #dfdfdf;
@@ -4007,6 +4008,7 @@ svg + .link__text, .link__text + svg {
   letter-spacing: -0.03em;
   color: #1b1c31;
   overflow-wrap: anywhere;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .about-card .title {
@@ -4103,6 +4105,12 @@ svg + .link__text, .link__text + svg {
   .feature .feature__img {
     justify-self: center;
   }
+}
+.feature--img-float {
+  display: block;
+}
+.feature--img-float .feature__img {
+  float: right;
 }
 .feature--img-right .feature__img {
   grid-column: 2;
