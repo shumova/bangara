@@ -13,6 +13,13 @@
     }
   }
 
+  &--img-float {
+    display: block;
+    .feature__img {
+      float: right;
+    }
+  }
+
   &--img-right {
     .feature__img {
       grid-column: 2;
